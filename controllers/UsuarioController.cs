@@ -1,15 +1,15 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using TaskSystem.Models;
+using MyNewApi.Models;
 
-namespace TaskSystem.Controllers
+namespace SistemaDeTarefas.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class UsuarioController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<List<UserModel>> GetAllUsers()
+        public ActionResult<List<UsuarioController>> BuscarTodosUsuarios()
         {
             return Ok();
         }
